@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile - PT. RentCar Indonesia</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .hero {
+            background-color: #414150;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+        }
+        .hero p {
+            font-size: 1.5rem;
+        }
+        .service-item {
+            padding: 20px;
+            text-align: center;
+        }
+        .service-item h3 {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">PT. Rentcar Indonesia</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Tentang Kami</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Layanan Kami</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Kontak</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('images-mobil1.png'); background-size: cover; background-position: center; position: relative;">
+         <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.404);"></div>
+         <div class="container" style="position: relative; z-index: 1;">
+             <h1 class="text-uppercase" style="font-size: 4rem; font-weight: bold;">Selamat Datang di PT. RentCar Indonesia</h1>
+             <p style="font-size: 1.75rem; margin-bottom: 30px;">Menyediakan Layanan Sewa Kendaraan Terbaik untuk Kebutuhan Anda</p>
+             <a href="#services" class="btn btn-primary btn-lg" style="padding: 10px 30px;">Lihat Layanan</a>
+         </div>
+     </section>
+     
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Tentang Kami</h2>
+            <p class="text-center">Rental Kendaraan adalah perusahaan yang bergerak di bidang penyewaan mobil dan motor. Kami berkomitmen untuk memberikan layanan berkualitas dengan berbagai jenis kendaraan yang dapat dipilih sesuai kebutuhan Anda.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-light py-5">
+         <div class="container">
+             <h2 class="text-center">Layanan Kami</h2>
+             <div class="row">
+                 <div class="col-md-4 service-item">
+                     <img src="images.webp" class="rounded-circle img-fluid" alt="Sewa Mobil"> <!-- Gambar lokal -->
+                     <h3>Sewa Mobil</h3>
+                     <p>Pilihan mobil keluarga hingga mobil mewah untuk keperluan Anda.</p>
+                 </div>
+                 <div class="col-md-4 service-item">
+                     <img src="images-motor.png" class="rounded-circle img-fluid" alt="Sewa Motor"> <!-- Gambar dari URL -->
+                     <h3>Sewa Motor</h3>
+                     <p>Motor harian dan sport untuk perjalanan santai maupun jauh.</p>
+                 </div>
+                 <div class="col-md-4 service-item">
+                     <img src="images-layanan-sopir.jpg" class="rounded-circle img-fluid" alt="Layanan Sopir">
+                     <h3>Layanan Sopir</h3>
+                     <p>Menyediakan sopir berpengalaman untuk kenyamanan perjalanan Anda.</p>
+                 </div>
+             </div>
+         </div>
+     </section>
+     
+     
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Kontak Kami</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Kantor Kami</h5>
+                    <p>Jl. Raya No. 123, Kota Anda, Indonesia</p>
+                    <p>Email: info@rentalkendaraan.com</p>
+                    <p>Telepon: +62 812 3456 7890</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Kirim Pesan</h5>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nama Anda</label>
+                            <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Anda</label>
+                            <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan Anda</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Masukkan pesan Anda"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 PT. RentCar Indonesia. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
